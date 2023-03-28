@@ -1,10 +1,28 @@
 # GrapeSwaggerRails
 
 [![Gem Version](https://badge.fury.io/rb/grape-swagger-rails.svg)](http://badge.fury.io/rb/grape-swagger-rails)
-[![Build Status](https://travis-ci.org/ruby-grape/grape-swagger-rails.svg)](https://travis-ci.org/ruby-grape/grape-swagger-rails)
+[![Test](https://github.com/ruby-grape/grape-swagger-rails/workflows/test/badge.svg?branch=master)](https://github.com/ruby-grape/grape-swagger-rails/actions)
 [![Code Climate](https://codeclimate.com/github/ruby-grape/grape-swagger-rails/badges/gpa.svg)](https://codeclimate.com/github/ruby-grape/grape-swagger-rails)
 
 Swagger UI as Rails Engine for grape-swagger gem.
+
+# Table of Contents
+
+- [Installation](#installation)
+- [Compatibility](#compatibility)
+- [Usage](#usage)
+  - [Basic Authentication](#basic-authentication)
+  - [Pre-fill Authentication](#pre-fill-authentication)
+  - [API Token Authentication](#api-token-authentication)
+  - [Swagger UI Authorization](#swagger-ui-authorization)
+    - [Integration with DoorKeeper](#integration-with-doorkeeper)
+  - [Hiding the API or Authorization text boxes](#hiding-the-api-or-authorization-text-boxes)
+  - [Updating Swagger UI from Dist](#updating-swagger-ui-from-dist)
+  - [Enabling in a Rails-API Project](#enabling-in-a-rails-api-project)
+  - [Enabling in Rails 6 (Sprokets 5)](#enabling-in-rails-6-sprokets-5)
+- [Contributors](#contributors)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Installation
 
