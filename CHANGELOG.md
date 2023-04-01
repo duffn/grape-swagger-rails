@@ -1,10 +1,14 @@
 ### Next Release
 
+* Your contribution here.
+* [#110](https://github.com/ruby-grape/grape-swagger-rails/pull/110): Update dummy app to current rails conventions - [@duffn](https://github.com/duffn).
+* [#112](https://github.com/ruby-grape/grape-swagger-rails/pull/112): Add Rubocop Action & autocorrect violations - [@duffn](https://github.com/duffn).
+
+### 0.4.0 (2023/03/28)
+
 * [#107](https://github.com/ruby-grape/grape-swagger-rails/pull/107): Add test matrix for multiple ruby versions - [@duffn](https://github.com/duffn).
 * [#105](https://github.com/ruby-grape/grape-swagger-rails/pull/105): Migrate to GitHub Actions - [@duffn](https://github.com/duffn).
 * [#98](https://github.com/ruby-grape/grape-swagger-rails/pull/98): Fix: test against Rails 6 - [@dblock](https://github.com/dblock).
-
-* Your contribution here.
 
 ### 0.3.1 (2019/02/16)
 

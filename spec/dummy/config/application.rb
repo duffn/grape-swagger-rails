@@ -1,23 +1,24 @@
-require File.expand_path('../boot', __FILE__)
+# frozen_string_literal: true
 
-require 'action_controller/railtie'
-require 'action_view/railtie'
-require 'sprockets/railtie'
-require 'jquery-rails'
-require 'rack/cors'
-require 'rack/no_animations'
+require_relative 'boot'
 
+require 'rails/all'
+
+# Require the gems listed in Gemfile, including any gems
+# you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 require 'grape-swagger-rails'
 
 module Dummy
   class Application < Rails::Application
-    config.paths.add File.join('app', 'api'), glob: File.join('**', '*.rb')
-    config.autoload_paths += Dir[Rails.root.join('app', 'api', '*')]
+    config.load_defaults Rails::VERSION::STRING.to_f
+
+    # For compatibility with applications that use this config
+    config.action_controller.include_all_helpers = false
     config.middleware.use Rack::Cors do
       allow do
         origins '*'
-        resource '*', headers: :any, methods: [:get, :post, :options]
+        resource '*', headers: :any, methods: %i[get post options]
       end
     end
   end
